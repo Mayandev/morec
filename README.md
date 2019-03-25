@@ -24,7 +24,7 @@
 
 ```bash
 $ git clone https://github.com/Mayandev/morec.git
-$ cd flutter_shuqi
+$ cd morec
 ```
 
 ### 2. Running
