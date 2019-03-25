@@ -6,7 +6,9 @@
 
 ## Screenshot for iOS
 
+![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_1.png)
 
+![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_2.png)
 
 ## Screenshot for Android
 
