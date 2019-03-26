@@ -30,6 +30,10 @@ class _MovieClassifyListViewState extends State<MovieClassifyListView> {
           title: Text('分类找电影'),
           backgroundColor: AppColor.white,
           elevation: 0,
+          leading: GestureDetector(
+            onTap: back,
+            child: Image.asset('images/icon_arrow_back_black.png'),
+          ),
         ),
         body: Container(
           child: ListView(
@@ -41,6 +45,10 @@ class _MovieClassifyListViewState extends State<MovieClassifyListView> {
           ),
         )
       );
+  }
+
+  back() {
+    Navigator.pop(context);
   }
 
   @override
