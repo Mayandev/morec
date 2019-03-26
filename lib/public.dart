@@ -20,6 +20,7 @@ export 'package:movie_recommend/util/toast.dart';
 export 'package:movie_recommend/util/tag_util.dart';
 export 'package:movie_recommend/util/search_delegate.dart';
 export 'package:movie_recommend/util/movie_data_util.dart';
+export 'package:movie_recommend/util/utility.dart';
 
 // model
 export 'package:movie_recommend/model/movie_item.dart';
