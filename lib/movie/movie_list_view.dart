@@ -54,10 +54,19 @@ class _MovieListViewState extends State<MovieListView> {
           brightness: Brightness.light,
           title: Text(title),
           backgroundColor: AppColor.white,
+          leading: GestureDetector(
+            onTap: back,
+            child: Image.asset('images/icon_arrow_back_black.png'),
+          ),
           elevation: 0,
         ),
         body: _buildBody()
       );
+  }
+
+   // 返回上个页面
+  back() {
+    Navigator.pop(context);
   }
 
   Widget _buildBody() {
@@ -83,7 +92,7 @@ class _MovieListViewState extends State<MovieListView> {
                 ),
               );
             }
-            return MovieListItem(movieList[index], action);
+            return  MovieListItem(movieList[index], action);
           },
           controller: _scrollController,
         ),

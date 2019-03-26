@@ -173,6 +173,10 @@ class _MovieTopListViewState extends State<MovieTopListView> with RouteAware {
       return Scaffold(
           appBar: AppBar(
             elevation: 0,
+            leading: GestureDetector(
+            onTap: back,
+            child: Image.asset('images/icon_arrow_back_black.png'),
+          ),
           ),
           body: Center(
             child: CupertinoActivityIndicator(
