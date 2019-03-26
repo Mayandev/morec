@@ -1,8 +1,8 @@
-# Morec - Flutter 版电影应用
+# :movie_camera: Morec - Flutter 版电影应用
 
 这是一个非常精美的 Flutter 版电影客户端，利用豆瓣现有的 Api，打造了一个完整的电影展示 App。细节十分完善，是一个经过完整设计的产品而非 Demo。
 
-正在完善中！！！
+正在完善影片详情页面以及影人详情页面，预计四月中旬全部完成。
 
 ## Screenshot for iOS
 
@@ -55,8 +55,6 @@ flutter run
 也欢迎在 [Github 主页](https://github.com/Mayandev)关注我的其他项目。
 
 如果对这个项目有任何建议或意见，欢迎在 [Issues](https://github.com/Mayandev/morec/issues) 提出。
-
-
 
 
 
