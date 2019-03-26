@@ -50,7 +50,7 @@ flutter run
 
 这个项目是我的本科毕业设计，目前正在全力开发当中。之后会加入机器学习相关算法，进行电影推荐，到时候会新创建一个 Repository，此库供大家学习 Flutter 使用。
 
-如果你喜欢这个项目，欢迎给我一个 star。我将持续更新这个项目 :)
+如果你喜欢这个项目，欢迎给我一个 star，**让我跟导师吹吹逼:speak_no_evil:**，我将持续更新这个项目 :blush:
 
 也欢迎在 [Github 主页](https://github.com/Mayandev)关注我的其他项目。
 
