@@ -49,7 +49,7 @@ class _MovieClassifyTagItemState extends State<MovieClassifyTagItem> {
                   borderRadius: BorderRadius.all(Radius.circular(3))),
             ),
             Opacity(
-              opacity: 0.5,
+              opacity: 0.6,
               child: Container(
                 width: width,
                 height: height,
