@@ -97,7 +97,6 @@ class _MovieDetailViewState extends State<MovieDetailView> {
               ],
             ),
           ),
-          
           // Container(color: pageColor,padding: EdgeInsets.symmetric(vertical: 300),),
           buildNavigationBar(),
         ],

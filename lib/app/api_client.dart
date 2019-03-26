@@ -10,7 +10,8 @@ import 'package:movie_recommend/model/movie_news.dart';
 
 class ApiClient {
   static const String baseUrl = 'http://api.douban.com/v2/movie/';
-  static const String apiKey = '';
+
+  static const String apiKey = '0b2bdeda43b5688921839c8ecb20399b';
   static const String webUrl = 'https://movie.douban.com/';
   var dio = ApiClient.createDio();
 
