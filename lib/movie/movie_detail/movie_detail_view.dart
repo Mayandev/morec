@@ -11,6 +11,8 @@ import 'movie_detail_header.dart';
 import 'movie_detail_tag.dart';
 import 'movie_summary_view.dart';
 import 'movie_detail_cast_view.dart';
+import 'movie_detail_photots.dart';
+import 'movie_detail_comment.dart';
 
 class MovieDetailView extends StatefulWidget {
   // 电影 id
@@ -71,7 +73,6 @@ class _MovieDetailViewState extends State<MovieDetailView> {
         ),
         body: Center(
           child: CupertinoActivityIndicator(
-            radius: 15,
           ),
         ));
     }
@@ -90,7 +91,9 @@ class _MovieDetailViewState extends State<MovieDetailView> {
                       MovieDetailHeader(movieDetail, pageColor),
                       MovieDetailTag(movieDetail.tags),
                       MovieSummaryView(movieDetail.summary, isSummaryUnfold, changeSummaryMaxLines),
-                      MovieDetailCastView(movieDetail.directors, movieDetail.casts)
+                      MovieDetailCastView(movieDetail.directors, movieDetail.casts),
+                      MovieDetailPhotots(movieDetail.trailers, movieDetail.photos),
+                      MovieDetailComment(movieDetail.comments)
                     ],
                   ),
                 )
