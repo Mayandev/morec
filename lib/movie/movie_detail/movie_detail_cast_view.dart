@@ -13,7 +13,6 @@ class MovieDetailCastView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<MovieActor> casts = [];
-
     directors.forEach((director) {
       casts.add(director);
     });
@@ -38,7 +37,7 @@ class MovieDetailCastView extends StatelessWidget {
           ),
           SizedBox(height: 10,),
           SizedBox.fromSize(
-            size: Size.fromHeight(200),
+            size: Size.fromHeight(130),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: directors.length + actors.length,
@@ -54,17 +53,23 @@ class MovieDetailCastView extends StatelessWidget {
   }
 
   _buildCastView(MovieActor cast) {
+    String avatarPlaceholder = 'https://ws4.sinaimg.cn/large/006tKfTcgy1g1ga5f71opj303k03kdfp.jpg';
     return Padding(
       padding: const EdgeInsets.only(left: 15.0),
       child: Column(
         children: [
           CircleAvatar(
-            backgroundImage: CachedNetworkImageProvider(cast.avatars.large),
+            backgroundImage: CachedNetworkImageProvider(cast.avatars == null ? avatarPlaceholder : cast.avatars.large),
             radius: 40.0,
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 8.0),
-            child: Text(cast.name, style: TextStyle(fontSize: fixedFontSize(14), color: AppColor.white),),
+          SizedBox(height: 8.0,),
+
+          Container(
+            width: 80,
+            child: Center(
+              child: Text(cast.name, style: TextStyle(fontSize: fixedFontSize(14), color: AppColor.white),maxLines: 1, overflow: TextOverflow.ellipsis,),
+            ),
+            
           ),
         ],
       ),
