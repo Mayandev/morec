@@ -36,7 +36,7 @@ class _MovieClassifyViewState extends State<MovieClassifyView> with AutomaticKee
         children: <Widget>[
           HomeSectionView(this.widget.title, 'search'),
           Container(
-            padding: EdgeInsets.fromLTRB(15, 10, 15, 10),
+            padding: EdgeInsets.fromLTRB(15, 10, 0, 10),
             child: Column(
               children: <Widget>[
                 MovieClassiyItem(tagList[0], classifyMovieList[0]),

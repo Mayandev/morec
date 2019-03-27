@@ -47,7 +47,7 @@ class MovieClassifySectionView extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.fromLTRB(15, 10, 15, 10),
+            padding: EdgeInsets.fromLTRB(15, 10, 0, 10),
             child: Wrap(spacing: 15, runSpacing: 20, children: children,),
           ),
         ]
