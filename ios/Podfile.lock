@@ -6,9 +6,13 @@ PODS:
     - Flutter
   - path_provider (0.0.1):
     - Flutter
+  - screen (0.0.1):
+    - Flutter
   - share (0.5.2):
     - Flutter
   - shared_preferences (0.0.1):
+    - Flutter
+  - video_player (0.0.1):
     - Flutter
 
 DEPENDENCIES:
@@ -16,8 +20,10 @@ DEPENDENCIES:
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - screen (from `.symlinks/plugins/screen/ios`)
   - share (from `.symlinks/plugins/share/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+  - video_player (from `.symlinks/plugins/video_player/ios`)
 
 EXTERNAL SOURCES:
   Flutter:
@@ -28,18 +34,24 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/fluttertoast/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
+  screen:
+    :path: ".symlinks/plugins/screen/ios"
   share:
     :path: ".symlinks/plugins/share/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
+  video_player:
+    :path: ".symlinks/plugins/video_player/ios"
 
 SPEC CHECKSUMS:
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
+  screen: abd91ca7bf3426e1cc3646d27e9b2358d6bf07b0
   share: 7d22fe8baedfe93aefd864bf0b73f29711fbb0a3
   shared_preferences: 1feebfa37bb57264736e16865e7ffae7fc99b523
+  video_player: 3964090a33353060ed7f58aa6427c7b4b208ec21
 
 PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
 
