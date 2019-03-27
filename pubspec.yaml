@@ -33,6 +33,9 @@ dependencies:
   http: ^0.12.0
   html: ^0.13.4+1
   palette_generator: ^0.1.1
+  photo_view: ^0.2.2
+  chewie: ^0.9.6
+  video_player: ^0.10.0+2
 
 dev_dependencies:
   flutter_test:
