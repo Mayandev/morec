@@ -12,7 +12,10 @@
 
 ## Screenshot for Android
 
-暂无
+![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_1.png)
+
+![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_2.png)
+
 
 ## Introduction
 
