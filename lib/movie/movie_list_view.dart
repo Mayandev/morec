@@ -73,7 +73,6 @@ class _MovieListViewState extends State<MovieListView> {
     if (movieList == null) {
       return Center(
         child: CupertinoActivityIndicator(
-          radius: 15,
         ),
       );
     }

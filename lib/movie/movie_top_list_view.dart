@@ -180,7 +180,6 @@ class _MovieTopListViewState extends State<MovieTopListView> with RouteAware {
           ),
           body: Center(
             child: CupertinoActivityIndicator(
-              radius: 15,
             ),
           ));
     }
@@ -209,10 +208,20 @@ class _MovieTopListViewState extends State<MovieTopListView> with RouteAware {
   }
 
   Widget _buildList() {
+    // 排名
     int index = 1;
-    var children =movieList.map((movie) =>
-      MovieTopItem(index: index++, item: MovieListItem(movie, this.widget.action),)
-    ).toList();
+    List<Widget> children = [];
+    for (var i = 0; i < movieList.length; i++) {
+      children.add(MovieTopItem(index: index++, item: MovieListItem(movieList[i], this.widget.action),));
+    }
+    Widget loading = Container(
+      padding: EdgeInsets.symmetric(vertical: 15),
+      child: Offstage(
+        offstage: _loaded,
+        child: CupertinoActivityIndicator(),
+      ),
+    );
+    children.add(loading);
     return Container(
       // padding: EdgeInsets.symmetric(horizontal: 15),
       child: Column(

@@ -34,7 +34,6 @@ class _HomeListViewState extends State<HomeListView> with AutomaticKeepAliveClie
     if (nowPlayingList == null) {
       return new Center(
         child: new CupertinoActivityIndicator(
-          radius: 15,
         ),
       );
     } else {  
