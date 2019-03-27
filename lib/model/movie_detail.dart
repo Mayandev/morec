@@ -3,6 +3,7 @@ import 'movie_image.dart';
 import 'movie_comment.dart';
 import 'movie_actor.dart';
 import 'movie_photo.dart';
+import 'movie_trailer.dart';
 
 /// 电影详情
 class MovieDetail {
@@ -19,7 +20,7 @@ class MovieDetail {
   List tags;  // 电影标签
   List durations;
   List genres;  // 电影类型
-  List trailerUrls;  // 预告片 url
+  List<MovieTrailer> trailers;  // 预告片 url
   List<MovieActor> casts;    // 演员
   List<MovieActor> directors; // 导演
   List countries;     // 国家
@@ -27,7 +28,7 @@ class MovieDetail {
   String summary;     // 电影简介
 
   MovieDetail(this.rating, this.originalTitle, this.images, this.year, this.comments, this.alt, this.id,
-     this.title, this.pubdates, this.tags, this.durations, this.genres, this.trailerUrls, this.casts, this.directors,
+     this.title, this.pubdates, this.tags, this.durations, this.genres, this.trailers, this.casts, this.directors,
      this.countries, this.photos, this.summary);
 
   MovieDetail.fromJson(Map data) {
@@ -42,7 +43,6 @@ class MovieDetail {
     tags = data['tags']?.cast<String>()?.toList();
     durations = data['durations']?.cast<String>()?.toList();
     genres = data['genres']?.cast<String>()?.toList();
-    trailerUrls = data['trailer_urls']?.cast<String>()?.toList();
     countries = data['countries']?.cast<String>()?.toList();
     summary = data['summary'];
     
@@ -50,6 +50,7 @@ class MovieDetail {
     List<MovieActor> castsData = [];
     List<MovieActor> directorsData = [];
     List<MoviePhoto> photosData = [];
+    List<MovieTrailer> trailerData = [];
 
     for (var i = 0; i < data['popular_comments'].length; i++) {
       commentData.add(MovieComment.fromJson(data['popular_comments'][i]));
@@ -63,12 +64,15 @@ class MovieDetail {
     for (var i = 0; i < data['photos'].length; i++) {
       photosData.add(MoviePhoto.fromJson(data['photos'][i]));
     }
+    for (var i = 0; i < data['trailers'].length; i++) {
+      trailerData.add(MovieTrailer.fromJson(data['trailers'][i]));
+    }
 
     comments = commentData;
     casts = castsData;
     directors = directorsData;  
     photos = photosData;
-
+    trailers = trailerData;
   }
 
 }
