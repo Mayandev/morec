@@ -28,6 +28,9 @@ export 'package:movie_recommend/model/movie_image.dart';
 export 'package:movie_recommend/model/movie_actor.dart';
 export 'package:movie_recommend/model/movie_news.dart';
 export 'package:movie_recommend/model/movie_detail.dart';
+export 'package:movie_recommend/model/movie_trailer.dart';
+export 'package:movie_recommend/model/movie_photo.dart';
+export 'package:movie_recommend/model/movie_comment.dart';
 
 // widget
 export 'package:movie_recommend/widget/movie_cover_image.dart';
