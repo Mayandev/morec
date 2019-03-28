@@ -48,6 +48,9 @@ flutter run
 - [http](https://pub.dartlang.org/packages/http)
 - [html](https://pub.dartlang.org/packages/html)
 - [palette_generator](https://pub.dartlang.org/packages/palette_generator)
+- [photo_view](https://pub.dartlang.org/packages/photo_view)
+- [chewie](https://pub.dartlang.org/packages/chewie)
+- [video_player](https://pub.dartlang.org/packages/video_player)
 
 # End
 
