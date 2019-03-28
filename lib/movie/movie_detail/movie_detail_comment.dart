@@ -16,9 +16,14 @@ class MovieDetailComment extends StatelessWidget {
   Widget build(BuildContext context) {
 
     List<Widget> children = [];
+    Widget noComment = Text('暂无短评', style: TextStyle(color: AppColor.white, fontSize: 14),);
 
     for (var i = 0; i < comments.length; i++) {
       children.add(CommentItemView(comments[i]));
+    }
+
+    if (comments.length == 0) {
+      children.add(noComment);
     }
 
     return Container(
@@ -51,7 +56,7 @@ class CommentItemView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String avatarPlaceholder = 'https://ws4.sinaimg.cn/large/006tKfTcgy1g1ga5f71opj303k03kdfp.jpg';
+    
     return Container(
       decoration: BoxDecoration(
         border: Border(bottom: BorderSide(color: AppColor.grey, width: 0.5))
@@ -64,7 +69,7 @@ class CommentItemView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               CircleAvatar(
-                backgroundImage: CachedNetworkImageProvider(comment.author.avatar == null ? avatarPlaceholder : comment.author.avatar),
+                backgroundImage: CachedNetworkImageProvider(comment.author.avatar),
                 radius: 16.0,
               ),
               SizedBox(width: 10,),

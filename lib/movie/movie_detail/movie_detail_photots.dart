@@ -4,9 +4,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:movie_recommend/public.dart';
 
-import 'movie_photo_preview.dart';
-import 'movie_video_play.dart';
-
 
 
 class MovieDetailPhotots extends StatelessWidget {

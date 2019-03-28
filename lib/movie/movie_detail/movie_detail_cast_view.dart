@@ -3,6 +3,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:movie_recommend/public.dart';
 
+import 'package:movie_recommend/movie/actor_detail/actor_detail_view.dart';
+
 class MovieDetailCastView extends StatelessWidget {
 
   final List<MovieActor> directors;
@@ -42,7 +44,7 @@ class MovieDetailCastView extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: directors.length + actors.length,
               itemBuilder: (BuildContext context, int index) {
-                return _buildCastView(casts[index]);
+                return _buildCastView(context, index, casts);
              },
             ),
           )
@@ -52,15 +54,28 @@ class MovieDetailCastView extends StatelessWidget {
 
   }
 
-  _buildCastView(MovieActor cast) {
-    String avatarPlaceholder = 'https://ws4.sinaimg.cn/large/006tKfTcgy1g1ga5f71opj303k03kdfp.jpg';
-    return Padding(
-      padding: const EdgeInsets.only(left: 15.0),
+  _buildCastView(BuildContext context, int index, List<MovieActor> casts) {
+    MovieActor cast =casts[index];
+    double paddingRight = 0.0;
+    if (index == casts.length-1) {
+      paddingRight = 15.0;
+    }
+        return Container(
+          margin: EdgeInsets.only(left: 15, right: paddingRight),
       child: Column(
         children: [
-          CircleAvatar(
-            backgroundImage: CachedNetworkImageProvider(cast.avatars == null ? avatarPlaceholder : cast.avatars.large),
-            radius: 40.0,
+          GestureDetector(
+            onTap: () {
+              if (cast.id == null) {
+                Toast.show('暂无该演员信息');
+              } else {
+                AppNavigator.push(context, ActorDetailView(id:cast.id));
+              }
+            },
+            child: CircleAvatar(
+              backgroundImage: CachedNetworkImageProvider(cast.avatars.large),
+              radius: 40.0,
+            ),
           ),
           SizedBox(height: 8.0,),
 
