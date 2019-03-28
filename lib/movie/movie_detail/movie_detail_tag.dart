@@ -3,7 +3,6 @@ import 'package:flutter/cupertino.dart';
 
 import 'package:movie_recommend/public.dart';
 
-import 'package:movie_recommend/movie/movie_list_view.dart';
 
 class MovieDetailTag extends StatelessWidget {
   final List tags;
