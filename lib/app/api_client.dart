@@ -107,8 +107,8 @@ class ApiClient {
   }
 
   // 演员详细信息
-  Future<dynamic> getActorDetail(int actorId) async {
-    Response<Map> response = await dio.get('celebrity/$actorId/photos');
+  Future<dynamic> getActorDetail(String actorId) async {
+    Response<Map> response = await dio.get('celebrity/$actorId');
     return response.data;    
   }
 

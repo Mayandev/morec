@@ -22,6 +22,7 @@ export 'package:movie_recommend/util/search_delegate.dart';
 export 'package:movie_recommend/util/movie_data_util.dart';
 export 'package:movie_recommend/util/utility.dart';
 
+
 // model
 export 'package:movie_recommend/model/movie_item.dart';
 export 'package:movie_recommend/model/movie_image.dart';
@@ -31,7 +32,11 @@ export 'package:movie_recommend/model/movie_detail.dart';
 export 'package:movie_recommend/model/movie_trailer.dart';
 export 'package:movie_recommend/model/movie_photo.dart';
 export 'package:movie_recommend/model/movie_comment.dart';
+export 'package:movie_recommend/model/movie_actor_detail.dart';
+export 'package:movie_recommend/model/movie_actor_work.dart';
 
 // widget
 export 'package:movie_recommend/widget/movie_cover_image.dart';
 export 'package:movie_recommend/widget/web_view_scene.dart';
+export 'package:movie_recommend/widget/movie_photo_preview.dart';
+export 'package:movie_recommend/widget/movie_video_play.dart';

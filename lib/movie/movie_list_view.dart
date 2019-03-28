@@ -52,7 +52,7 @@ class _MovieListViewState extends State<MovieListView> {
       return Scaffold(
         appBar: AppBar(
           brightness: Brightness.light,
-          title: Text(title),
+          title: Text(title+'电影'),
           backgroundColor: AppColor.white,
           leading: GestureDetector(
             onTap: back,

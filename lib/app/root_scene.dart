@@ -24,12 +24,10 @@ class _RootSceneState extends State<RootScene> {
   // 定义 tab icon
 List<Image> _tabImages = [
     Image.asset('images/tab_home.png'),
-    Image.asset('images/tab_discovery.png'),
     Image.asset('images/tab_my.png'),
   ];
   List<Image> _tabSelectedImages = [
     Image.asset('images/tab_home_selected.png'),
-    Image.asset('images/tab_discovery_selected.png'),
     Image.asset('images/tab_my_selected.png'),
   ];
 
@@ -98,13 +96,15 @@ List<Image> _tabImages = [
           ),
           BottomNavigationBarItem(
             icon: getTabIcon(1),
-            title: Text('发现'),
-          ),
-          BottomNavigationBarItem(
-            icon: getTabIcon(2),
             title: Text("我的"),
           )
         ],
+        currentIndex: _tabIndex,
+        onTap: (index) {
+          setState(() {
+            _tabIndex = index;
+          });
+        },
       ),
     );
   }
