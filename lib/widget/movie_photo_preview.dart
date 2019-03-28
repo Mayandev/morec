@@ -47,15 +47,6 @@ class _MoviePhotoPreviewState extends State<MoviePhotoPreview> {
 
 
     return Scaffold(
-      appBar: AppBar(
-          brightness: Brightness.dark,        
-          backgroundColor: Colors.black,
-          leading: GestureDetector(
-            onTap: back,
-            child: Image.asset('images/icon_arrow_back_white.png'),
-          ),
-          elevation: 0,
-      ),
       body: Container(
           decoration: BoxDecoration(
             color: Colors.black
