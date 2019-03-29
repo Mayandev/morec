@@ -63,5 +63,12 @@ flutter run
 如果对这个项目有任何建议或意见，欢迎在 [Issues](https://github.com/Mayandev/morec/issues) 提出。
 
 
+# 打个广告
+欢迎加我微信，一起交流，互相学习，共同进步！（备注：github）
 
+![](https://img-blog.csdnimg.cn/20190315083734931.jpg)
+
+你也可以关注我的公众号『嗜码』，每天推送干货。回复关键字「前端」、「Python」、「Java」、「Android」、「小程序」、「Vue」等获取免费精品学习资料。
+
+![](https://img-blog.csdnimg.cn/20190315083756375.png)
 
