@@ -1,16 +1,15 @@
 <!-- vscode-markdown-toc -->
-* 1. [豆瓣电影公开api](#api)
-	* 1.1. [1、正在热映](#)
-	* 1.2. [2、即将上映](#-1)
-	* 1.3. [3、本周口碑榜](#-1)
-	* 1.4. [4、新片榜](#-1)
-	* 1.5. [5、北美票房榜](#-1)
-	* 1.6. [6、top250 榜单](#top250)
-	* 1.7. [7、电影搜索](#-1)
-	* 1.8. [8、影片详情](#-1)
-	* 1.9. [9、影片剧照](#-1)
-	* 1.10. [10、演员详细信息](#-1)
-	* 1.11. [11、演员相册](#-1)
+* 1. [正在热映](#)
+* 2. [即将上映](#-1)
+* 3. [本周口碑榜](#-1)
+* 4. [新片榜](#-1)
+* 5. [北美票房榜](#-1)
+* 6. [top250 榜单](#top250)
+* 7. [电影搜索](#-1)
+* 8. [影片详情](#-1)
+* 9. [影片剧照](#-1)
+* 10. [演员详细信息](#-1)
+* 11. [演员相册](#-1)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -18,7 +17,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-##  1. <a name='api'></a>豆瓣电影公开api
+#  1. <a name='api'></a>豆瓣电影公开api
 
 由于豆瓣不再公开开放注册开发者，因此无法再获得 apikey，如果你需要使用apikey，请到公众号「**嗜码**」回复 apikey 获取。
 
@@ -26,7 +25,7 @@
 
 **如有侵权，请联系作者删除！**
 
-###  1.1. <a name=''></a>1、正在热映 
+##  1. <a name=''></a>正在热映 
 URL: http://api.douban.com/v2/movie/nowplaying?apikey=**********
 
 返回数据格式：
@@ -57,7 +56,7 @@ URL: http://api.douban.com/v2/movie/nowplaying?apikey=**********
     ]
 }
 ```
-###  1.2. <a name='-1'></a>2、即将上映 
+##  2. <a name='-1'></a>即将上映 
 URL： http://api.douban.com/v2/movie/coming?apikey=********&start=0&count=1
 
 返回数据格式：
@@ -88,7 +87,7 @@ URL： http://api.douban.com/v2/movie/coming?apikey=********&start=0&count=1
     ]
 }
 ```
-###  1.3. <a name='-1'></a>3、本周口碑榜
+##  3. <a name='-1'></a>本周口碑榜
 URL： http://api.douban.com/v2/movie/weekly?apikey=*********
 
 返回数据格式：
@@ -199,7 +198,7 @@ URL： http://api.douban.com/v2/movie/weekly?apikey=*********
     "title": "豆瓣电影本周口碑榜"
 }
 ```
-###  1.4. <a name='-1'></a>4、新片榜 
+##  4. <a name='-1'></a>新片榜 
 URL： http://api.douban.com/v2/movie/new_movies?apikey=********
 
 返回数据格式：
@@ -314,7 +313,7 @@ URL： http://api.douban.com/v2/movie/new_movies?apikey=********
 }
 ```
 
-###  1.5. <a name='-1'></a>5、北美票房榜
+##  5. <a name='-1'></a>北美票房榜
 URL： http://api.douban.com/v2/movie/us_box?apikey=********
 
 返回数据格式：
@@ -424,7 +423,7 @@ URL： http://api.douban.com/v2/movie/us_box?apikey=********
     "title": "豆瓣电影北美票房榜"
 }
 ```
-###  1.6. <a name='top250'></a>6、top250 榜单
+##  6. <a name='top250'></a>top250 榜单
 URL: http://api.douban.com/v2/movie/top250?apikey=********&start=249&count=4
 
 返回数据格式：
@@ -530,7 +529,7 @@ URL: http://api.douban.com/v2/movie/top250?apikey=********&start=249&count=4
 }
 ```
 
-###  1.7. <a name='-1'></a>7、电影搜索
+##  7. <a name='-1'></a>电影搜索
 URL： https://api.douban.com/v2/movie/search?q=keyword&tag=tag&count=20&start=1&apikey=********
 
 返回数据格式：
@@ -613,7 +612,7 @@ URL： https://api.douban.com/v2/movie/search?q=keyword&tag=tag&count=20&start=1
     "title": "带有标签 \"科幻\" 的条目"
 }
 ```
-###  1.8. <a name='-1'></a>8、影片详情
+##  8. <a name='-1'></a>影片详情
 URL：https://api.douban.com/v2/movie/subject/:movieId?apikey=********
 
 返回数据格式：
@@ -949,7 +948,7 @@ URL：https://api.douban.com/v2/movie/subject/:movieId?apikey=********
 }
 ```
 
-###  1.9. <a name='-1'></a>9、影片剧照
+##  9. <a name='-1'></a>影片剧照
 URL：http://api.douban.com/v2/movie/subject/:movieId/photos?apikey=********
 
 返回数据格式：(很奇怪，这里的 count 又有 end 的意思:dizzy_face:)
@@ -1023,7 +1022,7 @@ URL：http://api.douban.com/v2/movie/subject/:movieId/photos?apikey=********
 }
 ```
 
-###  1.10. <a name='-1'></a>10、演员详细信息
+##  10. <a name='-1'></a>演员详细信息
 URL：http://api.douban.com/v2/movie/celebrity/:actorId?apikey=********
 
 返回数据格式：
@@ -1175,7 +1174,7 @@ URL：http://api.douban.com/v2/movie/celebrity/:actorId?apikey=********
 }
 ```
 
-###  1.11. <a name='-1'></a>11、演员相册
+##  11. <a name='-1'></a>演员相册
 URL：http://api.douban.com/v2/movie/celebrity/:actorId/photos?apikey=********
 
 返回数据(很奇怪，这里的 count 又有 end 的意思:dizzy_face:)：
