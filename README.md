@@ -18,20 +18,30 @@
 - [x] 影人相册
 
 
-## Screenshot for iOS
+## Screenshot
+
+### 1. Screenshot for iOS
 
 ![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_1.png)
 
 ![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_2.png)
 
-## Screenshot for Android
+### 2. Screenshot for Android
 
 ![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_1.png)
 
 ![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_2.png)
 
 
+## Document
+
+
+项目使用的 api 已整理成 markdown 文档:book:，请点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
+
+
 ## Set up
+
+
 
 ### 1. Clone the repo
 
@@ -45,11 +55,6 @@ $ cd morec
 ```bash
 flutter run
 ```
-
-## Document
-
-
-项目使用的 api 已整理成 markdown 文档:book:，请点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
 
 ## Dependency
 
