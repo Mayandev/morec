@@ -2,6 +2,8 @@
 
 这是一个非常精美的 Flutter 版电影客户端，利用豆瓣现有的 Api，打造了一个完整的电影展示 App。细节十分完善，是一个经过完整设计的产品而非 Demo。
 
+已经实现的功能有：
+
 - [x] 豆瓣热门文章 banner
 - [x] 正在热映的电影
 - [x] 即将上映的电影
@@ -16,6 +18,10 @@
 - [x] 电影预告片/剧照
 - [x] 影人详情
 - [x] 影人相册
+
+待实现：
+
+- [] 对接后台，实现电影个性化推荐
 
 
 ## Screenshot
@@ -36,7 +42,7 @@
 ## Document
 
 
-项目使用的 api 已整理成 markdown 文档:book:，请点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
+项目使用的 API 已整理成 markdown 文档:book:，请点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
 
 
 ## Set up
