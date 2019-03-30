@@ -19,7 +19,15 @@
 - [x] 影人详情
 - [x] 影人相册
 
+## Download
 
+**Android：** [Apk 下载地址](https://github.com/Mayandev/morec/row/master/Morec.apk)
+
+或者扫描二维码下载：
+
+![](https://ws3.sinaimg.cn/large/006tKfTcgy1g1l1lreguzj305k05kmwz.jpg)
+
+**iOS：** 暂无。
 
 ## Screenshot
 
@@ -34,6 +42,7 @@
 ![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_1.png)
 
 ![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_2.png)
+
 
 
 ## Document
