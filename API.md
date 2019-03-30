@@ -1,7 +1,7 @@
 @[TOC]
 ## 豆瓣电影公开api
 
-由于豆瓣不再公开开放注册开发者，因此无法再获得 apikey，如果你需要使用apikey，请到公众号**「嗜码」**回复 apikey 获取。
+由于豆瓣不再公开开放注册开发者，因此无法再获得 apikey，如果你需要使用apikey，请到公众号「**嗜码**」回复 apikey 获取。
 
  没 key 一分钟限制 10 次访问，带 key 有 40 次。
 
@@ -9,6 +9,7 @@
 
 ### 1、正在热映 
 URL: http://api.douban.com/v2/movie/nowplaying?apikey=**********
+
 返回数据格式：
 ```json
 {
@@ -39,6 +40,7 @@ URL: http://api.douban.com/v2/movie/nowplaying?apikey=**********
 ```
 ### 2、即将上映 
 URL： http://api.douban.com/v2/movie/coming?apikey=********&start=0&count=1
+
 返回数据格式：
 ```json
 {
@@ -69,6 +71,7 @@ URL： http://api.douban.com/v2/movie/coming?apikey=********&start=0&count=1
 ```
 ### 3、本周口碑榜
 URL： http://api.douban.com/v2/movie/weekly?apikey=*********
+
 返回数据格式：
 ```json
 {
@@ -179,6 +182,7 @@ URL： http://api.douban.com/v2/movie/weekly?apikey=*********
 ```
 ### 4、新片榜 
 URL： http://api.douban.com/v2/movie/new_movies?apikey=********
+
 返回数据格式：
 ```json
 {
@@ -293,6 +297,7 @@ URL： http://api.douban.com/v2/movie/new_movies?apikey=********
 
 ### 5、北美票房榜
 URL： http://api.douban.com/v2/movie/us_box?apikey=********
+
 返回数据格式：
 ```json
 {
@@ -402,6 +407,7 @@ URL： http://api.douban.com/v2/movie/us_box?apikey=********
 ```
 ### 6、top250 榜单
 URL: http://api.douban.com/v2/movie/top250?apikey=********&start=249&count=4
+
 返回数据格式：
 ```json
 {
@@ -507,6 +513,7 @@ URL: http://api.douban.com/v2/movie/top250?apikey=********&start=249&count=4
 
 ### 7、电影搜索
 URL： https://api.douban.com/v2/movie/search?q=keyword&tag=tag&count=20&start=1&apikey=********
+
 返回数据格式：
 ```json
 {
@@ -590,6 +597,7 @@ URL： https://api.douban.com/v2/movie/search?q=keyword&tag=tag&count=20&start=1
 ### 8、影片详情
 URL：https://api.douban.com/v2/movie/subject/:movieId?apikey=********
 
+返回数据格式：
 ```json
 {
     "rating": {
@@ -924,6 +932,7 @@ URL：https://api.douban.com/v2/movie/subject/:movieId?apikey=********
 
 ### 9、影片剧照
 URL：http://api.douban.com/v2/movie/subject/:movieId/photos?apikey=********
+
 返回数据格式：(很奇怪，这里的 count 又有 end 的意思:dizzy_face:)
 ```json
 {
@@ -997,6 +1006,7 @@ URL：http://api.douban.com/v2/movie/subject/:movieId/photos?apikey=********
 
 ### 10、演员详细信息
 URL：http://api.douban.com/v2/movie/celebrity/:actorId?apikey=********
+
 返回数据格式：
 ```json
 {
