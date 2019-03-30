@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 
 import 'package:movie_recommend/public.dart';
 
@@ -10,7 +11,7 @@ class AppNavigator {
   static push(BuildContext context, Widget scene) {
     Navigator.push(
       context, 
-      MaterialPageRoute(
+      CupertinoPageRoute(
         builder: (BuildContext context) => scene,
       ),
     );
@@ -28,14 +29,14 @@ class AppNavigator {
 
   // 进入电影榜单列表页面
   static pushMovieTopList(BuildContext context, String title, String subTitle, String action) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) {
+    Navigator.push(context, CupertinoPageRoute(builder: (context) {
       return MovieTopListView(action: action, title: title, subTitle: subTitle,);
     }));
   }
 
   // 进入 webview 
   static pushWeb(BuildContext context, String url, String title) {
-    Navigator.push(context, MaterialPageRoute(builder: (context) {
+    Navigator.push(context, CupertinoPageRoute(builder: (context) {
       return WebViewScene(url: url, title: title);
     }));
   }
