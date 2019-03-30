@@ -5,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:movie_recommend/public.dart';
 
 import 'package:movie_recommend/home/home_scene.dart';
-import 'package:movie_recommend/discovery/discovery_scene.dart';
 import 'package:movie_recommend/my/my_scene.dart';
 
 class RootScene extends StatefulWidget {
@@ -81,7 +80,6 @@ List<Image> _tabImages = [
       body: IndexedStack(
         children: <Widget>[
           HomeScene(),
-          DiscoveryScene(),
           MyScene()
         ],
         index: _tabIndex,
@@ -89,6 +87,7 @@ List<Image> _tabImages = [
       bottomNavigationBar: CupertinoTabBar(
         backgroundColor: Colors.white,
         activeColor: AppColor.primary,
+        border: Border(top: BorderSide.none),
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: getTabIcon(0),
