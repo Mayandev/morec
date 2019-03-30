@@ -101,15 +101,22 @@ class ApiClient {
   }
 
   // 影片剧照
-  Future<dynamic> getMovieAlbum(int movieId) async {
-    Response<Map> response = await dio.get('subject/$movieId/photos');
-    return response.data;    
+  Future<dynamic> getMovieAlbum({String movieId, int start, int count}) async {
+    Response<Map> response = await dio.get('subject/$movieId/photos', queryParameters: {'start':start, 'count':count});
+    return response.data['photos'];    
   }
 
   // 演员详细信息
   Future<dynamic> getActorDetail(String actorId) async {
     Response<Map> response = await dio.get('celebrity/$actorId');
     return response.data;    
+  }
+
+
+  // 获取演员相册
+  Future<dynamic> getActorPhotos({String actorId, int start, int count}) async {
+    Response<Map> response = await dio.get('celebrity/$actorId/photos', queryParameters: {'start':start, 'count':count});
+    return response.data['photos'];    
   }
 
   static Dio createDio() {
