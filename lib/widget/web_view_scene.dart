@@ -19,9 +19,14 @@ class _WebViewSceneState extends State<WebViewScene> {
   Widget build(BuildContext context) {
     return WebviewScaffold(
       url: this.widget.url,
+
       appBar: AppBar(
         elevation: 0,
         title: Text(this.widget.title ?? ''),
+        leading: GestureDetector(
+            onTap: back,
+            child: Image.asset('images/icon_arrow_back_black.png'),
+          ),
         actions: <Widget>[
           GestureDetector(
             onTap: () {
@@ -40,5 +45,10 @@ class _WebViewSceneState extends State<WebViewScene> {
         ),
       ),
     );
+  }
+
+   // 返回上个页面
+  back() {
+    Navigator.pop(context);
   }
 }
