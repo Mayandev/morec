@@ -1,15 +1,15 @@
 <!-- vscode-markdown-toc -->
-* 1. [正在热映](#)
-* 2. [即将上映](#-1)
-* 3. [本周口碑榜](#-1)
-* 4. [新片榜](#-1)
-* 5. [北美票房榜](#-1)
+* 1. [正在热映](#in_theater)
+* 2. [即将上映](#coming)
+* 3. [本周口碑榜](#weekly)
+* 4. [新片榜](#new)
+* 5. [北美票房榜](#us_box)
 * 6. [top250 榜单](#top250)
-* 7. [电影搜索](#-1)
-* 8. [影片详情](#-1)
-* 9. [影片剧照](#-1)
-* 10. [演员详细信息](#-1)
-* 11. [演员相册](#-1)
+* 7. [电影搜索](#search)
+* 8. [影片详情](#movie)
+* 9. [影片剧照](#movie_photo)
+* 10. [演员详细信息](#actor)
+* 11. [演员相册](#actor_photo)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -25,7 +25,7 @@
 
 **如有侵权，请联系作者删除！**
 
-##  1. <a name=''></a>正在热映 
+##  1. <a name='in_theater'></a>正在热映 
 URL: http://api.douban.com/v2/movie/nowplaying?apikey=**********
 
 返回数据格式：
@@ -56,7 +56,7 @@ URL: http://api.douban.com/v2/movie/nowplaying?apikey=**********
     ]
 }
 ```
-##  2. <a name='-1'></a>即将上映 
+##  2. <a name='coming'></a>即将上映 
 URL： http://api.douban.com/v2/movie/coming?apikey=********&start=0&count=1
 
 返回数据格式：
@@ -87,7 +87,7 @@ URL： http://api.douban.com/v2/movie/coming?apikey=********&start=0&count=1
     ]
 }
 ```
-##  3. <a name='-1'></a>本周口碑榜
+##  3. <a name='weekly'></a>本周口碑榜
 URL： http://api.douban.com/v2/movie/weekly?apikey=*********
 
 返回数据格式：
@@ -198,7 +198,7 @@ URL： http://api.douban.com/v2/movie/weekly?apikey=*********
     "title": "豆瓣电影本周口碑榜"
 }
 ```
-##  4. <a name='-1'></a>新片榜 
+##  4. <a name='new'></a>新片榜 
 URL： http://api.douban.com/v2/movie/new_movies?apikey=********
 
 返回数据格式：
@@ -313,7 +313,7 @@ URL： http://api.douban.com/v2/movie/new_movies?apikey=********
 }
 ```
 
-##  5. <a name='-1'></a>北美票房榜
+##  5. <a name='us_box'></a>北美票房榜
 URL： http://api.douban.com/v2/movie/us_box?apikey=********
 
 返回数据格式：
@@ -529,7 +529,7 @@ URL: http://api.douban.com/v2/movie/top250?apikey=********&start=249&count=4
 }
 ```
 
-##  7. <a name='-1'></a>电影搜索
+##  7. <a name='search'></a>电影搜索
 URL： https://api.douban.com/v2/movie/search?q=keyword&tag=tag&count=20&start=1&apikey=********
 
 返回数据格式：
@@ -612,7 +612,7 @@ URL： https://api.douban.com/v2/movie/search?q=keyword&tag=tag&count=20&start=1
     "title": "带有标签 \"科幻\" 的条目"
 }
 ```
-##  8. <a name='-1'></a>影片详情
+##  8. <a name='movie'></a>影片详情
 URL：https://api.douban.com/v2/movie/subject/:movieId?apikey=********
 
 返回数据格式：
@@ -948,7 +948,7 @@ URL：https://api.douban.com/v2/movie/subject/:movieId?apikey=********
 }
 ```
 
-##  9. <a name='-1'></a>影片剧照
+##  9. <a name='movie_photo'></a>影片剧照
 URL：http://api.douban.com/v2/movie/subject/:movieId/photos?apikey=********
 
 返回数据格式：(很奇怪，这里的 count 又有 end 的意思:dizzy_face:)
@@ -1022,7 +1022,7 @@ URL：http://api.douban.com/v2/movie/subject/:movieId/photos?apikey=********
 }
 ```
 
-##  10. <a name='-1'></a>演员详细信息
+##  10. <a name='actor'></a>演员详细信息
 URL：http://api.douban.com/v2/movie/celebrity/:actorId?apikey=********
 
 返回数据格式：
@@ -1174,7 +1174,7 @@ URL：http://api.douban.com/v2/movie/celebrity/:actorId?apikey=********
 }
 ```
 
-##  11. <a name='-1'></a>演员相册
+##  11. <a name='actor_photo'></a>演员相册
 URL：http://api.douban.com/v2/movie/celebrity/:actorId/photos?apikey=********
 
 返回数据(很奇怪，这里的 count 又有 end 的意思:dizzy_face:)：
