@@ -25,14 +25,15 @@
 
 ### 1. Screenshot for iOS
 
-![screenshot for iOS](https://ws3.sinaimg.cn/large/006tKfTcgy1g1kwm89507j326r0rkhdt.jpg)
-![screenshot for iOS](https://ws1.sinaimg.cn/large/006tKfTcgy1g1kwm6k68dj326r0rkb29.jpg)
+![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_1.png)
 
+![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_2.png)
 
 ### 2. Screenshot for Android
 
-![screenshot for Android](https://ws2.sinaimg.cn/large/006tKfTcgy1g1kwl4toxoj326r0rke81.jpg)
-![screenshot for Android](https://ws2.sinaimg.cn/large/006tKfTcgy1g1kwl31zaoj326r0rkkjl.jpg)
+![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_1.png)
+
+![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_2.png)
 
 
 ## Document
