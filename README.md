@@ -17,6 +17,7 @@
 - [x] 影人详情
 - [x] 影人相册
 
+
 ## Screenshot for iOS
 
 ![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_1.png)
@@ -29,10 +30,6 @@
 
 ![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_2.png)
 
-
-## Introduction
-
-编写中。。。
 
 ## Set up
 
@@ -49,10 +46,13 @@ $ cd morec
 flutter run
 ```
 
+## Document
+
+
+项目使用的 api 已整理成 markdown 文档:book:，请点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
 
 ## Dependency
 
-- [shared_preferences](https://pub.dartlang.org/packages/shared_preferences)
 - [carousel_slider](https://pub.dartlang.org/packages/carousel_slider)
 - [dio](https://pub.dartlang.org/packages/dio)
 - [cached_network_image](https://pub.flutter-io.cn/packages/cached_network_image)
@@ -65,7 +65,7 @@ flutter run
 - [chewie](https://pub.dartlang.org/packages/chewie)
 - [video_player](https://pub.dartlang.org/packages/video_player)
 
-# End
+## End
 
 这个项目是我的本科毕业设计，目前正在全力开发当中。之后会加入机器学习相关算法，进行电影推荐，到时候会新创建一个 Repository，此库供大家学习 Flutter 使用。
 
@@ -76,7 +76,7 @@ flutter run
 如果对这个项目有任何建议或意见，欢迎在 [Issues](https://github.com/Mayandev/morec/issues) 提出。
 
 
-# 打个广告
+## 打个广告
 欢迎加我微信，一起交流，互相学习，共同进步！（备注：github）
 
 ![](https://img-blog.csdnimg.cn/20190315083734931.jpg)
