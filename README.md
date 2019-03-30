@@ -4,20 +4,18 @@
 
 已经实现的功能有：
 
-- [x] 豆瓣热门文章 banner
+- [x] 热门文章 banner
 - [x] 正在热映的电影
 - [x] 即将上映的电影
-- [x] 一周口碑电影榜
-- [x] top250 榜单
-- [x] 一周新电影榜
-- [x] 北美票房榜
 - [x] 分类浏览
 - [x] 电影搜索
-- [x] 电影详情
-- [x] 电影短评
-- [x] 电影预告片/剧照
-- [x] 影人详情
-- [x] 影人相册
+- [x] 电影榜单：top250、北美票房榜、一周新电影榜、一周口碑榜
+- [x] 电影详情：简介、剧照、预告片、电影短评
+- [x] 影人详情：影人简介、相关作品、相册
+
+To-do List:
+
+- [ ] 长按保存剧照
 
 ## Download
 
@@ -48,11 +46,10 @@
 ## Document
 
 
-项目使用的 API 已整理成 markdown 文档:book:，请点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
+项目使用的 API 已整理成 markdown 文档:book:，点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
 
 
 ## Set up
-
 
 
 ### 1. Clone the repo
