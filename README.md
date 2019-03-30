@@ -21,7 +21,7 @@
 
 ## Download
 
-**Android：** [Apk 下载地址](https://github.com/Mayandev/morec/row/master/Morec.apk)
+**Android：** [Apk 下载地址](https://github.com/Mayandev/morec/raw/master/Morec.apk)
 
 或者扫描二维码下载：
 
