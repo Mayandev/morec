@@ -25,15 +25,14 @@
 
 ### 1. Screenshot for iOS
 
-![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_1.png)
+![screenshot for iOS](https://ws3.sinaimg.cn/large/006tKfTcgy1g1kwm89507j326r0rkhdt.jpg)
+![screenshot for iOS](https://ws1.sinaimg.cn/large/006tKfTcgy1g1kwm6k68dj326r0rkb29.jpg)
 
-![screenshot for iOS](https://github.com/Mayandev/morec/blob/master/screenshot/iOS_2.png)
 
 ### 2. Screenshot for Android
 
-![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_1.png)
-
-![screenshot for Android](https://github.com/Mayandev/morec/blob/master/screenshot/Android_2.png)
+![screenshot for Android](https://ws2.sinaimg.cn/large/006tKfTcgy1g1kwl4toxoj326r0rke81.jpg)
+![screenshot for Android](https://ws2.sinaimg.cn/large/006tKfTcgy1g1kwl31zaoj326r0rkkjl.jpg)
 
 
 ## Document
@@ -75,21 +74,12 @@ flutter run
 
 ## End
 
-这个项目是我的本科毕业设计，目前正在全力开发当中。之后会加入机器学习相关算法，进行电影推荐，到时候会新创建一个 Repository，此库供大家学习 Flutter 使用。
+这个项目是我的本科毕业设计，目前正在全力开发当中。之后会加入机器学习相关算法，进行电影推荐，到时候会新创建一个 Repository，此库供大家学习 Flutter 使用。如果你喜欢这个项目，欢迎给我一个 star，**让我跟导师吹吹逼:speak_no_evil:**，我将持续更新这个项目。
 
-如果你喜欢这个项目，欢迎给我一个 star，**让我跟导师吹吹逼:speak_no_evil:**，我将持续更新这个项目。
-
-也欢迎在 [Github 主页](https://github.com/Mayandev)关注我的其他项目。
+欢迎在 [Github 主页](https://github.com/Mayandev)关注我的其他项目。
 
 如果对这个项目有任何建议或意见，欢迎在 [Issues](https://github.com/Mayandev/morec/issues) 提出。
 
-
-## 打个广告
-欢迎加我微信，一起交流，互相学习，共同进步！（备注：github）
-
-![](https://img-blog.csdnimg.cn/20190315083734931.jpg)
-
-你也可以关注我的公众号『嗜码』，每天推送干货。回复关键字「前端」、「Python」、「Java」、「Android」、「小程序」、「Vue」等获取免费精品学习资料。
-
-![](https://img-blog.csdnimg.cn/20190315083756375.png)
+欢迎加我微信（左）或者关注我的公众号（右），一起交流，互相学习，共同进步！（备注：github）
+![](https://ws1.sinaimg.cn/large/006tKfTcgy1g1kwjsc9pwj30ec0760u6.jpg)
 
