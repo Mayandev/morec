@@ -92,7 +92,7 @@ class _MovieDetailViewState extends State<MovieDetailView> {
                       MovieDetailTag(movieDetail.tags),
                       MovieSummaryView(movieDetail.summary, isSummaryUnfold, changeSummaryMaxLines),
                       MovieDetailCastView(movieDetail.directors, movieDetail.casts),
-                      MovieDetailPhotots(movieDetail.trailers, movieDetail.photos),
+                      MovieDetailPhotots(movieDetail.trailers, movieDetail.photos, movieDetail.id),
                       MovieDetailComment(movieDetail.comments)
                     ],
                   ),

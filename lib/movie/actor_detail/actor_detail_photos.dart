@@ -4,14 +4,17 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:movie_recommend/public.dart';
 
+import 'package:movie_recommend/widget/movie_photo_list.dart';
+
 
 
 
 class ActorDetailPhoto extends StatelessWidget {
 
   final List<MoviePhoto> photos;
+  final String actorId;
 
-  const ActorDetailPhoto(this.photos);
+  const ActorDetailPhoto(this.photos, this.actorId);
 
 
   @override
@@ -20,13 +23,18 @@ class ActorDetailPhoto extends StatelessWidget {
     List<Widget> children = [];
     Widget showMore = Container(
       margin: EdgeInsets.only(left: 15, bottom: 15),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Text('查看更多',style: TextStyle(fontSize: 12, color: AppColor.lightGrey),),
-          Icon(Icons.keyboard_arrow_right, color: AppColor.lightGrey,),
-        ],
+      child: GestureDetector(
+        onTap: () {
+          AppNavigator.push(context, MoviePhotoList(action: 'actor',id: actorId, title: '相册',));
+        },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text('查看更多',style: TextStyle(fontSize: 12, color: AppColor.lightGrey),),
+            Icon(Icons.keyboard_arrow_right, color: AppColor.lightGrey,),
+          ],
+        ),
       ),
     );
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
+import 'package:movie_recommend/widget/movie_photo_list.dart';
+
 import 'package:movie_recommend/public.dart';
 
 
@@ -10,8 +12,9 @@ class MovieDetailPhotots extends StatelessWidget {
 
   final List<MovieTrailer> trailers;
   final List<MoviePhoto> photos;
+  final String movieId;
 
-  const MovieDetailPhotots(this.trailers, this.photos);
+  const MovieDetailPhotots(this.trailers, this.photos, this.movieId);
 
 
   @override
@@ -21,14 +24,19 @@ class MovieDetailPhotots extends StatelessWidget {
     Widget showMore = Container(
       margin: EdgeInsets.only(left: 15, bottom: 15),
       
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Text('查看更多',style: TextStyle(fontSize: 12, color: AppColor.lightGrey),),
-          Icon(Icons.keyboard_arrow_right, color: AppColor.lightGrey,),
-        ],
-      ),
+      child: GestureDetector(
+        onTap: () {
+          AppNavigator.push(context, MoviePhotoList(action: 'movie',id: movieId, title: '剧照',));
+        },
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text('查看更多',style: TextStyle(fontSize: 12, color: AppColor.lightGrey),),
+            Icon(Icons.keyboard_arrow_right, color: AppColor.lightGrey,),
+          ],
+        ),
+      )
     );
 
     for (var i = 0; i < trailers.length; i++) {

@@ -90,7 +90,7 @@ class _ActorDetailViewState extends State<ActorDetailView> {
                       ActorDetailHeader(actorDetail, pageColor),
                       ActorDetailSummary(actorDetail.summary, isSummaryUnfold, changeSummaryMaxLines),
                       ActorDetailWorks(actorDetail.works),
-                      ActorDetailPhoto(actorDetail.photos),
+                      ActorDetailPhoto(actorDetail.photos, actorDetail.id),
                       // MovieDetailTag(movieDetail.tags),
                       // MovieSummaryView(movieDetail.summary, isSummaryUnfold, changeSummaryMaxLines),
                       // MovieDetailCastView(movieDetail.directors, movieDetail.casts),
