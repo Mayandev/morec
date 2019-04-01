@@ -16,6 +16,7 @@
 To-do List:
 
 - [ ] 长按保存剧照
+- [ ] 电影收藏
 
 ## Download
 
