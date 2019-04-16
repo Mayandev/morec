@@ -4,6 +4,8 @@ PODS:
     - Flutter
   - fluttertoast (0.0.2):
     - Flutter
+  - image_picker_saver (0.0.1):
+    - Flutter
   - path_provider (0.0.1):
     - Flutter
   - screen (0.0.1):
@@ -19,6 +21,7 @@ DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
   - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
   - fluttertoast (from `.symlinks/plugins/fluttertoast/ios`)
+  - image_picker_saver (from `.symlinks/plugins/image_picker_saver/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - screen (from `.symlinks/plugins/screen/ios`)
   - share (from `.symlinks/plugins/share/ios`)
@@ -32,6 +35,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_webview_plugin/ios"
   fluttertoast:
     :path: ".symlinks/plugins/fluttertoast/ios"
+  image_picker_saver:
+    :path: ".symlinks/plugins/image_picker_saver/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
   screen:
@@ -47,6 +52,7 @@ SPEC CHECKSUMS:
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
   flutter_webview_plugin: ed9e8a6a96baf0c867e90e1bce2673913eeac694
   fluttertoast: b644586ef3b16f67fae9a1f8754cef6b2d6b634b
+  image_picker_saver: 4f28bd70e1efdca68ad88beab0f11d22cffe04f6
   path_provider: f96fff6166a8867510d2c25fdcc346327cc4b259
   screen: abd91ca7bf3426e1cc3646d27e9b2358d6bf07b0
   share: 7d22fe8baedfe93aefd864bf0b73f29711fbb0a3
