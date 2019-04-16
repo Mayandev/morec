@@ -4,6 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 
 import 'package:movie_recommend/public.dart';
 
+// 查看更多相册列表
 class MoviePhotoList extends StatefulWidget {
   final String action;
   final String title;
@@ -64,11 +65,15 @@ class _MoviePhotoListState extends State<MoviePhotoList> {
     }
     List<Widget> children = [];
     List<ImageProvider> providers = [];
+    List<String> imageUrls = [];
+    for (var i = 0; i < photos.length; i++) {
+      imageUrls.add(photos[i].image);
+    }
     for (var i = 0; i < photos.length; i++) {
       children.add(
         GestureDetector(
           onTap: () {
-            AppNavigator.push(context, MoviePhotoPreview(providers: providers, index: i,));
+            AppNavigator.push(context, MoviePhotoPreview(providers: providers, imageUrls: imageUrls, index: i,));
           },
           child: Hero(
             tag: 'photo$i',
@@ -82,6 +87,7 @@ class _MoviePhotoListState extends State<MoviePhotoList> {
         )
       );
       providers.add(CachedNetworkImageProvider(photos[i].image));
+      imageUrls.add(photos[i].image);
     }
     
     return CustomScrollView(

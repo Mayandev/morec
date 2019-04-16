@@ -20,7 +20,10 @@ class ActorDetailPhoto extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<ImageProvider> providers = [];
+    List<String> imageUrls = [];
     List<Widget> children = [];
+
+    // 查看更多
     Widget showMore = Container(
       margin: EdgeInsets.only(left: 15, bottom: 15),
       child: GestureDetector(
@@ -38,11 +41,15 @@ class ActorDetailPhoto extends StatelessWidget {
       ),
     );
 
+    for (var i = 0; i < photos.length; i++) {
+      imageUrls.add(photos[i].image);
+    }
 
     for (var i = 0; i < photos.length; i++) {
-      children.add(PhotoItem(photos[i], i, providers));
+      children.add(PhotoItem(photos[i], i, providers,imageUrls));
       providers.add(CachedNetworkImageProvider(photos[i].image));
     }
+
   
     children.add(showMore);
 
@@ -80,9 +87,10 @@ class PhotoItem extends StatelessWidget {
 
   final MoviePhoto photo;
   final int index;
+  final List<String> imageUrls;
   final List<ImageProvider> providers;
 
-  const PhotoItem(this.photo, this.index, this.providers);
+  const PhotoItem(this.photo, this.index, this.providers, this.imageUrls);
 
   
 
@@ -92,7 +100,7 @@ class PhotoItem extends StatelessWidget {
       margin: EdgeInsets.only(left:15, bottom: 15),
       child: GestureDetector(
         onTap: () {
-          AppNavigator.push(context, MoviePhotoPreview(providers: providers, index: index,));
+          AppNavigator.push(context, MoviePhotoPreview(providers: providers, imageUrls:imageUrls, index: index,));
         },
         child: ClipRRect(
           borderRadius: BorderRadius.circular(4.0),

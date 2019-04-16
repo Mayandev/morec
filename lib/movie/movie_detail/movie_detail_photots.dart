@@ -20,6 +20,7 @@ class MovieDetailPhotots extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<ImageProvider> providers = [];
+    List<String> imageUrls = [];
     List<Widget> children = [];
     Widget showMore = Container(
       margin: EdgeInsets.only(left: 15, bottom: 15),
@@ -44,7 +45,11 @@ class MovieDetailPhotots extends StatelessWidget {
     }
 
     for (var i = 0; i < photos.length; i++) {
-      children.add(PhotoItem(photos[i], i, providers));
+      imageUrls.add(photos[i].image);
+    }
+
+    for (var i = 0; i < photos.length; i++) {
+      children.add(PhotoItem(photos[i], i, providers, imageUrls));
       providers.add(CachedNetworkImageProvider(photos[i].image));
     }
   
@@ -140,8 +145,9 @@ class PhotoItem extends StatelessWidget {
   final MoviePhoto photo;
   final int index;
   final List<ImageProvider> providers;
+  final List<String> imageUrls;
 
-  const PhotoItem(this.photo, this.index, this.providers);
+  const PhotoItem(this.photo, this.index, this.providers, this.imageUrls);
 
   
 
@@ -151,7 +157,7 @@ class PhotoItem extends StatelessWidget {
       margin: EdgeInsets.only(left:15, bottom: 15),
       child: GestureDetector(
         onTap: () {
-          AppNavigator.push(context, MoviePhotoPreview(providers: providers, index: index,));
+          AppNavigator.push(context, MoviePhotoPreview(providers: providers, index: index, imageUrls: imageUrls,));
         },
         child: ClipRRect(
           borderRadius: BorderRadius.circular(4.0),
