@@ -36,6 +36,7 @@ dependencies:
   photo_view: ^0.2.2
   chewie: ^0.9.6
   video_player: ^0.10.0+2
+  image_picker_saver: ^0.1.0
 
 dev_dependencies:
   flutter_test:
