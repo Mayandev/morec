@@ -1,6 +1,8 @@
 # :movie_camera: Morec - Flutter Movie App
 
-This is a very beautiful movie application build by [flutter](https://flutter.dev/), use the [Douban](https://movie.douban.com/) public API. 
+This is a very beautiful movie application which build by [flutter](https://flutter.dev/), use the [Douban](https://movie.douban.com/) public API. 
+
+The project uses common layouts widget, such as Container, Stack, Column, Row, ListView, etc. It's very suitable for the freshman to practice. If you like this project, you can also give me a star, thank you so much!
 
 Already completed:
 
@@ -12,10 +14,11 @@ Already completed:
 - [x] movie top list：top250、US box、weekly new
 - [x] movie detail：introduction, stills, trailers, short reviews
 - [x] actor detail：introduction, works, album
+- [x] long press to save stills
 
 To-do List:
 
-- [ ] long press to save stills
+
 - [ ] favorite movie
 
 ## Download
