@@ -4,6 +4,8 @@
 
 这是一个非常精美的 Flutter 版电影客户端，利用豆瓣现有的 Api，打造了一个完整的电影展示 App。细节十分完善，是一个经过完整设计的产品而非 Demo。
 
+项目使用的都是较为常见的布局，例如：Container、Stack、Column、Row、ListView等等。另外，也使用了一些较为常用的插件：flutter_webview_plugin、carousel_slider、dio等等，非常适合当作入门或者练手项目。跟着项目敲下来，3-4天即可入门flutter，掌握常见的布局以及插件的使用，希望大家学习顺利。喜欢这个项目的话也可以为我一个 star，非常感谢！
+
 已经实现的功能有：
 
 - [x] 热门文章 banner
