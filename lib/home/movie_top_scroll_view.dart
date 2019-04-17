@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:palette_generator/palette_generator.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+
 import 'package:movie_recommend/public.dart';
 import 'movie_top_banner_view.dart';
 
@@ -68,21 +71,31 @@ class _MovieTopScrollViewState extends State<MovieTopScrollView> with AutomaticK
   // 加载数据
   Future<void> fetchData() async {
       ApiClient client = new ApiClient();
-      var weeklyData = await client.getWeeklyList();
-      var top250Data = await client.getTop250List(start: 0, count: 10);
-      var usBoxData = await client.getUsBoxList();
-      var newMovieData = await client.getNewMoviesList();
+      var weeklyData = MovieDataUtil.getMovieList(await client.getWeeklyList());
+      var top250Data = MovieDataUtil.getMovieList(await client.getTop250List(start: 0, count: 10));
+      var usBoxData = MovieDataUtil.getMovieList(await client.getUsBoxList());
+      var newMovieData = MovieDataUtil.getMovieList(await client.getNewMoviesList());
+      PaletteGenerator paletteGenerator1 = await PaletteGenerator.fromImageProvider(
+        CachedNetworkImageProvider(weeklyData[0].images.small));
+      PaletteGenerator paletteGenerator2 = await PaletteGenerator.fromImageProvider(
+        CachedNetworkImageProvider(top250Data[0].images.small));
+      PaletteGenerator paletteGenerator3 = await PaletteGenerator.fromImageProvider(
+        CachedNetworkImageProvider(newMovieData[0].images.small));
+      PaletteGenerator paletteGenerator4 = await PaletteGenerator.fromImageProvider(
+        CachedNetworkImageProvider(usBoxData[0].images.small));
+
+      
       
       setState(() { 
-        weeklyList = MovieDataUtil.getMovieList(weeklyData);
-        top250List = MovieDataUtil.getMovieList(top250Data);
-        usBoxList = MovieDataUtil.getMovieList(usBoxData);
-        newMovieList = MovieDataUtil.getMovieList(newMovieData);
+        weeklyList = weeklyData;
+        top250List = top250Data;
+        usBoxList = usBoxData;
+        newMovieList = newMovieData;
         banners = [
-          new MovieTopBanner(weeklyList, '一周口碑电影榜', '每周五更新·共10部', 'weekly'), 
-          new MovieTopBanner(top250List, '豆瓣电影Top250', '豆瓣榜单·共250部', 'top250'),
-          new MovieTopBanner(newMovieList, '一周新电影榜', '每周五更新·共10部', 'new_movies'), 
-          new MovieTopBanner(usBoxList, '北美电影票房榜', '每周五更新·共10部', 'us_box')
+          new MovieTopBanner(weeklyList, '一周口碑电影榜', '每周五更新·共10部', 'weekly',paletteGenerator1.darkVibrantColor.color), 
+          new MovieTopBanner(top250List, '豆瓣电影Top250', '豆瓣榜单·共250部', 'top250',paletteGenerator2.darkVibrantColor.color),
+          new MovieTopBanner(newMovieList, '一周新电影榜', '每周五更新·共10部', 'new_movies',paletteGenerator3.darkVibrantColor.color), 
+          new MovieTopBanner(usBoxList, '北美电影票房榜', '每周五更新·共10部', 'us_box',paletteGenerator4.darkVibrantColor.color)
         ];
       });
   }

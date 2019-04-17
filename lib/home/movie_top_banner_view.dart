@@ -34,12 +34,12 @@ class MovieTopBannerView extends StatelessWidget {
             builder: (BuildContext context) {
               return GestureDetector(
                 onTap: () {
-                  AppNavigator.pushMovieTopList(context, banner.title, banner.subTitle, banner.action);
+                  AppNavigator.pushMovieTopList(context, banner.title, banner.subTitle, banner.action,);
                 },
                   child: Container(
                     width: Screen.width,
                     margin: EdgeInsets.symmetric(horizontal: 5.0),
-                    child: MovieTopItemView(banner.movies, banner.title, banner.subTitle)
+                    child: MovieTopItemView(banner.movies, banner.title, banner.subTitle, banner.coverColor)
                 ),
               );
             },
@@ -59,5 +59,6 @@ class MovieTopBanner {
   String title;
   String subTitle;
   String action;
-  MovieTopBanner(this.movies, this.title, this.subTitle, this.action);
+  Color coverColor;
+  MovieTopBanner(this.movies, this.title, this.subTitle, this.action, this.coverColor);
 }

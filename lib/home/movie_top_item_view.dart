@@ -8,8 +8,9 @@ class MovieTopItemView extends StatelessWidget {
   final List<MovieItem> movies;
   final String title;
   final String subTitle;
+  final Color coverColor;
 
-  MovieTopItemView(this.movies, this.title, this.subTitle);
+  MovieTopItemView(this.movies, this.title, this.subTitle, this.coverColor);
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +44,7 @@ class MovieTopItemView extends StatelessWidget {
                   
                 ),
                 Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                   width: Screen.width,
                   height: 100,
                   child: Column(
@@ -70,7 +71,7 @@ class MovieTopItemView extends StatelessWidget {
               child: new Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: Color(0xff3E454D),
+                color: this.coverColor == null ? Color(0xff3E454D) : this.coverColor,
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5))
               ),
               child: ListView.builder(
