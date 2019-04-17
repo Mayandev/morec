@@ -22,7 +22,7 @@ class ActorDetailHeader extends StatelessWidget {
       child: Stack(
         children: <Widget>[
           Image(
-            image: CachedNetworkImageProvider(actorDetail.photos == null ? actorDetail.avatars.large :actorDetail.photos[0].image),
+            image: CachedNetworkImageProvider(actorDetail.photos.length == 0 ? actorDetail.avatars.large :actorDetail.photos[0].image),
             fit: BoxFit.cover,
             width: width,
             height: height,

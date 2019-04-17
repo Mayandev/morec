@@ -53,6 +53,16 @@ class ActorDetailPhoto extends StatelessWidget {
   
     children.add(showMore);
 
+    if (photos.length == 0) {
+      children.clear();
+      children.add(Container(
+        padding: EdgeInsets.all(15),
+        child: Text(
+          '暂无相册',style: TextStyle(color: AppColor.white, fontSize: fixedFontSize(14))
+        ),
+      ));
+    }
+
     return Container(
       // padding: EdgeInsets.all(15),
       child: Column(
