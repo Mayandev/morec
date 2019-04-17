@@ -17,7 +17,7 @@
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-#  1. <a name='api'></a>豆瓣电影公开api
+#  <a name='api'></a>豆瓣电影公开api
 
 由于豆瓣不再公开开放注册开发者，因此无法再获得 apikey，如果你需要使用apikey，请到公众号「**嗜码**」回复 apikey 获取。
 
