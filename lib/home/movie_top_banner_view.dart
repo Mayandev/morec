@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:palette_generator/palette_generator.dart';
 
 import 'package:movie_recommend/public.dart';
 import 'movie_top_item_view.dart';
@@ -59,6 +60,6 @@ class MovieTopBanner {
   String title;
   String subTitle;
   String action;
-  Color coverColor;
+  PaletteColor coverColor;
   MovieTopBanner(this.movies, this.title, this.subTitle, this.action, this.coverColor);
 }

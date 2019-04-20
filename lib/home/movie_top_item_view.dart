@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:palette_generator/palette_generator.dart';
 
 import 'package:movie_recommend/model/movie_item.dart';
 import 'package:movie_recommend/public.dart';
@@ -8,7 +9,7 @@ class MovieTopItemView extends StatelessWidget {
   final List<MovieItem> movies;
   final String title;
   final String subTitle;
-  final Color coverColor;
+  final PaletteColor coverColor;
 
   MovieTopItemView(this.movies, this.title, this.subTitle, this.coverColor);
 
@@ -71,7 +72,7 @@ class MovieTopItemView extends StatelessWidget {
               child: new Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: this.coverColor == null ? Color(0xff3E454D) : this.coverColor,
+                color: this.coverColor == null ? Color(0xff3E454D) : this.coverColor.color,
                 borderRadius: BorderRadius.only(bottomLeft: Radius.circular(5), bottomRight: Radius.circular(5))
               ),
               child: ListView.builder(
