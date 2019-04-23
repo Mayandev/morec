@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'package:movie_recommend/public.dart';
 
@@ -34,9 +33,6 @@ List<Image> _tabImages = [
   void initState() { 
     super.initState();
     
-    setupApp();
-
-
     eventBus.on(EventUserLogin, (arg) {
       setState(() {});
     });
@@ -61,20 +57,12 @@ List<Image> _tabImages = [
     super.dispose();
   }
 
-  setupApp() async {
-    preferences =await SharedPreferences.getInstance();
-    setState(() {
-      isLoaded = true;
-    });
-  }
   
   
   
   @override
   Widget build(BuildContext context) {
-    if (!isLoaded) {
-      return RefreshProgressIndicator();
-    }
+
 
     return Scaffold(
       body: IndexedStack(

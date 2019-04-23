@@ -10,12 +10,19 @@ class MyScene extends StatefulWidget {
   _MySceneState createState() => _MySceneState();
 }
 
-class _MySceneState extends State<MyScene> {
+class _MySceneState extends State<MyScene> with RouteAware{
   String avatarUrl =
       'https://ws2.sinaimg.cn/large/006tKfTcly1g1jsilob3pj30oe0oi7vc.jpg';
 
   @override
+  void deactivate() {
+    print('myscene deactivate');
+    super.deactivate();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    print('my_scene build');
     Screen.updateStatusBarStyle(SystemUiOverlayStyle.light);
     return Scaffold(
       body: Container(

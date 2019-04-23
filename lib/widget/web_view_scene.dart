@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:share/share.dart';
 
-
+import 'package:movie_recommend/public.dart';
 class WebViewScene extends StatefulWidget {
   final String url;
   final String title;
@@ -15,6 +16,20 @@ class WebViewScene extends StatefulWidget {
 }
 
 class _WebViewSceneState extends State<WebViewScene> {
+
+  @override
+  void deactivate() {
+    print('webview deactivate');
+    super.deactivate();
+  }
+
+  @override
+  void dispose() {
+    Screen.updateStatusBarStyle(SystemUiOverlayStyle.light);
+    print('webview dispose');
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
