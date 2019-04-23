@@ -1,5 +1,5 @@
 
-<img src="https://github.com/Mayandev/morec/blob/master/screenshot/poster.png" align="center">
+<img src="https://github.com/Mayandev/morec/blob/master/screenshot/poster.png" align="center" width="850">
 # :movie_camera: Morec - Flutter 版电影应用
 
 - [English](https://github.com/Mayandev/morec/blob/master/README_EN.md)
