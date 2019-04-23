@@ -1,6 +1,3 @@
-
-<img src="https://ws3.sinaimg.cn/large/006tNc79gy1g2cg8nthnej30jn08c3z4.jpg" align="center" width="850">
-
 # :movie_camera: Morec - Flutter 版电影应用
 
 - [English](https://github.com/Mayandev/morec/blob/master/README_EN.md)
