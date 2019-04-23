@@ -1,3 +1,5 @@
+![](https://github.com/Mayandev/morec/blob/master/screenshot/poster.png)
+
 # :movie_camera: Morec - Flutter 版电影应用
 
 - [English](https://github.com/Mayandev/morec/blob/master/README_EN.md)
