@@ -1,5 +1,6 @@
 # :movie_camera: Morec - Flutter 版电影应用
 
+我是一只来自北方的狼🐺
 - [English](https://github.com/Mayandev/morec/blob/master/README_EN.md)
 
 这是一个非常精美的 Flutter 版电影客户端，利用豆瓣现有的 Api，打造了一个完整的电影展示 App。细节十分完善，是一个经过完整设计的产品而非 Demo。
