@@ -1,3 +1,9 @@
+> 这个分支用于测试 Flutter 的新特性，稳定后会合并至主分支
+
+## Test Log
+
+- 2019.5.9 测试将 Flutter 编译成 web 端
+
 # :movie_camera: Morec - Flutter 版电影应用
 
 - [English](https://github.com/Mayandev/morec/blob/master/README_EN.md)
