@@ -1,3 +1,7 @@
+### notice:
+- 最近豆瓣电影搜索接口（/search）貌似挂了，所以app无法进行电影搜索，如果你有解决方法，可以在 [Issues](https://github.com/Mayandev/morec/issues) 提出。
+---
+
 # :movie_camera: Morec - Flutter 版电影应用
 
 - [English](https://github.com/Mayandev/morec/blob/master/README_EN.md)
