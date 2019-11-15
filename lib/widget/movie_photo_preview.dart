@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:photo_view/photo_view.dart';
 
 import 'dart:io';
 import 'package:share/share.dart';
@@ -80,7 +81,7 @@ class _MoviePhotoPreviewState extends State<MoviePhotoPreview> {
 
 
     for (var i = 0; i < this.widget.providers.length; i++) {
-      options.add(PhotoViewGalleryPageOptions(imageProvider: this.widget.providers[i], heroTag: 'photo$i'));
+      options.add(PhotoViewGalleryPageOptions(imageProvider: this.widget.providers[i], heroAttributes: PhotoViewHeroAttributes(tag: 'photo$i')));
     }
 
 

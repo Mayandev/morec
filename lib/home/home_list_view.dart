@@ -6,7 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'movie_three_grid_view.dart';
 import 'movie_top_scroll_view.dart';
 import 'home_news_banner_view.dart';
-import 'movie_classify_view.dart';
 
 
 class HomeListView extends StatefulWidget {
@@ -50,7 +49,7 @@ class _HomeListViewState extends State<HomeListView> with AutomaticKeepAliveClie
                 new MovieThreeGridView(nowPlayingList, '影院热映', 'in_theaters'),
                 new MovieThreeGridView(comingList, '即将上映', 'coming_soon'),
                 new MovieTopScrollView(title: '电影榜单'),
-                new MovieClassifyView(title: '分类浏览')
+                // new MovieClassifyView(title: '分类浏览')
               ],
           ),
         )
