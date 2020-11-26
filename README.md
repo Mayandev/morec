@@ -48,12 +48,6 @@
 
 
 
-## Document
-
-
-项目使用的 API 已整理成 markdown 文档:book:，点击 [API.md](https://github.com/Mayandev/morec/blob/master/API.md) 查看。
-
-
 ## Set up
 
 
