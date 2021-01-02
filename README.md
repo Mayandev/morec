@@ -88,8 +88,3 @@ flutter run
 
 如果对这个项目有任何建议或意见，欢迎在 [Issues](https://github.com/Mayandev/morec/issues) 提出。
 
-欢迎关注我的公众号，不定期分享资源和干货！
-
-![](https://raw.githubusercontent.com/Mayandev/mayandev_blog_image/master/images%E6%9C%AA%E6%A0%87%E9%A2%98-1.png)
-
-
